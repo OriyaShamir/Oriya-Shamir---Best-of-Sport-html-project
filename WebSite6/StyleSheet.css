@@ -1,0 +1,148 @@
+﻿body {
+
+}
+
+.button {
+    background: linear-gradient(to bottom, #225a5b 5%, #408c99 100%);
+    background-color: #2f7f81;
+    border-radius: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        opacity: 0.9;
+    }
+
+
+.reka {
+    background-image: url('Reka/BOX.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    direction: ltr;
+}
+.LRfont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    direction: ltr;
+}
+.MSG {
+    font-size: x-large;
+    text-align: center;
+    color:#ff0000
+}
+.cotarot {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    color: #2f7f81;
+    text-transform: uppercase;
+}
+.logo {
+    width: 604px;
+    height: 183px;
+    display: inline-block;
+}
+.para {
+    width: 60%;
+    line-height: 1.5;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.move {
+    text-align:left;
+}
+.cotarotmisna {    
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+}
+.loginregister_container {
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 30em;
+    margin-top: -9em;
+    margin-left: -15em;
+}
+.LRButtons {
+    width: 390px;
+    height: 40px;
+    background-color: #637aad;
+    border: 1px solid #314179;
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+    .LRButtons:hover {
+        opacity: 0.9;      
+        background-color: #637aad;
+    }
+.lrcotarot {
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+}
+.loginalign {
+    text-align:center;
+}
+.LoginPosition {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    direction: ltr;
+    margin-top:60px
+}
+.UserConnected {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    direction: ltr;
+    float: left
+}
+.logoutbutton {
+    background: linear-gradient(to bottom, #ff0000 5%, #b72020 100%);
+    background-color: #ff0000;
+    border-radius: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-transform: uppercase;
+}
+
+    .logoutbutton:hover {
+        opacity: 0.9;
+    }
+.Adminpage {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    color: red;
+    text-transform: uppercase;
+}
+.imgusers {
+    display: block;
+    margin:0 auto 0 auto;
+}
