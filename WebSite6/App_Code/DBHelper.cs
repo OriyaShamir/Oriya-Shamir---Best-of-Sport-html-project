@@ -14,19 +14,13 @@ using System.Data;
 
 public class DBHelper
 {
+
     private string connectionstring = @"Provider = Microsoft.ACE.OLEDB.12.0; " +
-                    @"Data Source = "+ HttpContext.Current.Server.MapPath("\\DemoDB.accdb") + "; " +
+                    @"Data Source = " + HttpContext.Current.Server.MapPath("\\DemoDB.accdb") + "; " +
                     @"Persist Security Info=False;";
-    
-    /// <summary>
-    /// default constractor use the defaiult connection string
-    /// </summary>
-    public DBHelper()
-    {
 
-    }
 
-    public DataTable GetTableByName (string TableName)
+    public  DataTable GetTableByName(string TableName)
     {
         OleDbConnection connection = GetConnectionToTheDB();
         if (connection == null)
@@ -43,18 +37,20 @@ public class DBHelper
     {
         OleDbConnection conn = new OleDbConnection();
         // add a connection string to the connection
-        if (this.connectionstring == "") { return null; }
-        conn.ConnectionString = this.connectionstring;
+       conn.ConnectionString = connectionstring;
+    
         try
         {
             //open the connection to the data base
             conn.Open();
             return conn;
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            ex.GetType();
             return null;
         }
+
     }
     public DataSet GetDataSet(string query)
     {
@@ -68,11 +64,15 @@ public class DBHelper
         d.Fill(ds);
         return ds;
     }
-
+    /// <summary>
+    /// return a data table frm the data base basen on an SQL query from the user
+    /// </summary>
+    /// <param name="query">an SQL QUERY</param>
+    /// <returns>Data Table: one Data Table</returns>
     public DataTable GetDataTable(string query)
     {
         try
-        {
+       {
             OleDbConnection connection = GetConnectionToTheDB();
             if (connection == null)
                 return null;
@@ -84,29 +84,33 @@ public class DBHelper
             connection.Close();
             return ds.Tables[0];
         }
-        catch (Exception)
+
+       
+        catch (Exception ex)
         {
+            ex.GetType();
             //catch the error (if there is an error while connecting.
             return null;
 
         }
+
+        
     }
 
 
-    public void SetConnection(string s)
-    {
-        this.connectionstring = s;
-    }
 
     public OleDbConnection GetConnectionToTheDB()
     {
-        if (this.connectionstring == "")
+        if (connectionstring == "")
         {
-            return null;
         }
 
         OleDbConnection connection = new OleDbConnection();
-        connection.ConnectionString = this.connectionstring;
+      connection.ConnectionString = connectionstring;
+        //open the connection to the data base
+        connection.Open();
+        return connection;
+        /*
         try
         {
             //open the connection to the data base
@@ -114,17 +118,18 @@ public class DBHelper
             return connection;
 
         }
-        catch (Exception)
+        catch (Exception ex)
         {
             //catch the error (if there is an error while connecting.
             return null;
 
         }
+        */
     }
 
     public int ExecuteNonQuery(string sql)
     {
-        OleDbConnection connection = new OleDbConnection(sql);
+        OleDbConnection connection = new OleDbConnection(connectionstring);
         OleDbCommand command = new OleDbCommand(sql, connection);
         connection.Open();
         int rowsAffected = command.ExecuteNonQuery();
@@ -132,3 +137,4 @@ public class DBHelper
         return rowsAffected;
     }
 }
+

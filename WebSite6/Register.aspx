@@ -14,7 +14,7 @@
           </tr>   
           <tr>
                      <td>Email:</td>
-                     <td><asp:TextBox ID="TextBox1"  runat="server" placeholder="Enter Email"></asp:TextBox> </td>
+                     <td><asp:TextBox ID="Email"  runat="server" placeholder="Enter Email"></asp:TextBox> </td>
           </tr>
           <tr>
                      <td>First Name: </td>
@@ -36,7 +36,7 @@
              
         </table>
         <br />
-        <asp:Button ID="registerbutton" CssClass="LRButtons" runat="server" Text="Register" OnClick="registerbutton_Click" />
+        <asp:Button ID="Registerbutton" CssClass="LRButtons" runat="server" Text="Register" OnClick="Registerbutton_Click" />
         <br />
         <br />
           <div class="MSG">
