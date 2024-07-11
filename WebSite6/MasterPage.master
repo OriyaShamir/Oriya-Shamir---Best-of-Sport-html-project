@@ -28,18 +28,12 @@
               <td> <asp:Button ID="Button2" runat="server" Text="Mood" CssClass="button" OnClick="Button2_Click" /> </td> 
               <td> <asp:Button ID="Button3" runat="server" Text="Leadership" CssClass="button" OnClick="Button3_Click" /> </td> 
               <td> <asp:Button ID="Button4" runat="server" Text="Sport Types" CssClass="button" OnClick="Button4_Click" /> </td> 
-                <td>  <asp:Button ID="Button10" runat="server" Text="Exercises" CssClass="button" OnClick="Button9_Click"  /> </td> 
               <td> <asp:Button ID="Button8" runat="server" Text="About" CssClass="button" OnClick="Button8_Click" /> </td>
-              <td> <asp:Button ID="Adminbutton" runat="server" Text="Admin Panel" CssClass="logoutbutton" Visible="false" OnClick="Adminbutton_Click"  /> </td>
             </tr>
         </table>
               
           <table border="0" >
-              <tr>
-                  <td> <asp:Button ID="Logout" runat="server" Text="Log Out" CssClass="logoutbutton" Visible="false" OnClick="Logout_Click" /> </td> 
-                  <td> <asp:Button ID="Button5" runat="server" Text="Login" CssClass="button" OnClick="Button5_Click" /> </td> 
-                  <td> <asp:Button ID="Button6" runat="server" Text="Register" CssClass="button" OnClick="Button6_Click" /> </td>
-              </tr>
+
           </table>
 
 

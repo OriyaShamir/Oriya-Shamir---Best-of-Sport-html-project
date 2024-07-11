@@ -15,6 +15,12 @@
      <tr>
          <td><p class="para">Our mission is to empower anyone at any age or stage in their fitness journey with the information and tools that will help them to make better choices – even just one small better choice can motivate them and improve their potential to truly thrive.</p></td>
      </tr>
+
+      <tr>
+         <td><p class="para">• Credits : Oriya Shamir</p></td>
+     </tr>
+
+
     </table>
      </div>
 </asp:Content>
